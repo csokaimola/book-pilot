@@ -62,8 +62,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
-            <h1>About Me</h1>
-            <span class="subheading">This is what I do.</span>
+            <h1>About the book</h1>
+            <span class="subheading">Detailed explanation of the 4 parts.</span>
           </div>
         </div>
       </div>
@@ -74,9 +74,54 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
+        <h2 class="section-heading">I. Data Exploration</h2>
+        <p>Before starting working with data, data analysts need to gain a good understanding of how their data was born, what's in their data, and assess its quality. Actual work typically starts with re-organizing, cleaning and storing the data in an appropriate way. Such work, also called data wrangling, takes a lot of time, typically more than any actual analysis. Moreover, the decisions during data wrangling may have far-reaching consequences for the results of the analysis. The chapters in this part discuss how to assess data quality by understanding how the data was born, what frequent issues actual data have, and introduce tools and good practice of data wrangling to deal with those issues. Next, we discuss the methods of exploratory data analysis and give advice on data visualization. This part is closed by chapters on concepts and methods that help generalize findings in actual data to other situations: inference and testing hypotheses.</p>
+        <p>Chapters of this section:
+          <ol>
+            <li><strong>Origins of data</strong> (data table, data quality, survey, scraping, sampling, ethics)</li>
+            <li><strong>Preparing data for analysis</strong> (tidy data, source of variation, variable types, missing data, data cleaning)</li>
+            <li><strong>Exploratory data analysis</strong> (probability, distributions, extreme values, summary stats, layers of data visualization)</li>
+            <li><strong>Comparison and correlation</strong> (conditional probability, conditional distribution, conditional expectation, visual comparisons, correlation, good graphs and tables)</li>
+            <li><strong>Generalizing from a dataset</strong> (repeated samples, confidence interval, standard error estimation via bootstrap and formula, external validity)</li>
+            <li><strong>Testing hypotheses</strong> (null and alternative hypotheses, t-test, false positives / false negatives, p-value, testing multiple hypotheses)</li>
+          </ol>
+          </p>
+        <h2 class="section-heading">II. Patterns: regression analysis</h2>
+        <p>Uncovering patterns of association in the data can be an important goal in itself, and it is the prerequisite to prediction and establishing the effect of an intervention. The chapters in this part give a thorough introduction to regression analysis, whose goal is to uncover average differences in y that correspond to differences in x. We start with simple regression analysis, introducing nonparametric regressions and focusing on linear regression. Subsequent chapters discuss how linear regression is used to accommodate complicated functional forms, how to generalize regression results from the data to other settings, and how to estimate and interpret the results of linear regression with multiple x variables. The last two chapters of this part cover probability models (linear regressions and logit and probit models with binary y variables) and regressions using time series data. Through all chapters, the emphasis is on understanding the intuition behind the methods, their applicability in various situations, and the correct interpretation of their results.</p>
+        <p>Chapters of this section:
+        <ol start="7">
+          <li><strong>Simple regression analysis</strong> (non-parametric regression, linear regression, OLS, predicted values and residuals, regression and causality)</li>
+          <li><strong>Complicated patterns and messy data</strong> (taking log and other transformations of variables, piecewise linear splines and polynomials, measurement error in variables, influential observations, using weights)</li>
+          <li><strong>Generalizing results of regression analysis</strong> (standard error, confidence interval, prediction interval, testing, external validity)</li>
+          <li><strong>Multiple linear regression</strong> (linear regression mechanics, binary and other qualitative right-hand-side variables, interactions, ceteris paribus vs. conditioning in multiple regression)</li>
+          <li><strong>Probability models</strong> (linear probability, logit and probit, marginal differences, goodness of fit)</li>
+          <li><strong>Time series regressions</strong> (series frequency, trends, seasonality, stationarity, lags, serial correlation)</li>
+        </ol>
+        </p>
+        <h2 class="section-heading">III. Prediction</h2>
+        <p>Data analysis in business and policy applications is often aimed at predicting the value of variable y with the help of x variables. Examples include predicting the price of differentiated products by their characteristics, predicting the probability by which loan applicants would repay their loans based on their features, or forecasting daily sales by seasonal patterns. This part starts with introducing the general framework for prediction, including the concepts of the loss function, overfitting, training and test samples, and cross-validation. Separate chapters introduce prediction methods with linear regression (variable selection with lasso), tree-based methods, and random forest. We discuss prediction of probabilities and classification, and forecasting y in time series data. Through all chapters, we introduce the language used in predictive analytics (machine learning), emphasize the intuition behind the various predictive models and their evaluation, conceptual issues related to in-sample fit, cross-validation and out-of-data prediction, and how to choose a good method for the problem at hand that likely gives good predictions.</p>
+        <p>Chapters of this section:
+        <ol start="13">
+          <li><strong>Framework for prediction</strong> (prediction error, loss function, RMSE, prediction with regression, overfitting, external validity, np-hard problems, machine learning)</li>
+          <li><strong>Model selection</strong> (adjusted measures of in-sample fit, cross-validation, shrinkage/LASSO)</li>
+          <li><strong>Regression trees</strong> (Idea of decision trees, CART, stopping rules, pruning, search algorithms)</li>
+          <li><strong>Random forest</strong> (boosting, decorrelating trees, regression vs random forest)</li>
+          <li><strong>Classification</strong> (calibration and measures of fit, ROC/AUC, classification with logit vs. Random forest)</li>
+          <li><strong>Forecasting from time series data</strong> (cross-validation in time series, ARIMA, vector autoregression, daily series and seasonality, new tools: auto-arima and Prophet)</li>
+        </ol>
+        </p>
+        <h2 class="section-heading">IV. Causality: learning the effects of interventions</h2>
+        <p>Decisions in business and policy are often centered on specific interventions, such as changing monetary policy, modifying health care financing, changing the price or other attributes of products, or changing the media mix in marketing. Learning the effects of such interventions is the subject of causal analysis, an important purpose of data analysis. This part starts with the conceptual framework of causal analysis, introducing potential outcomes, counterfactuals, average effects, treated and control groups, and causal maps (graphs that show our assumptions about causal relationships about variables). These concepts help guide subsequent analysis and interpret its results. The next chapters in this part introduce potential issues with controlled experiments and tools to deal with them, confounders that bias causal estimates in observational data and how regression analysis and matching can overcome, or mitigate, their effects, and when and how longitudinal data can help further mitigate those issues. We introduce and discuss difference-in-differences analysis, panel regression analysis with first differences and fixed effects, and methods that can help defining control groups in longitudinal data, such as synthetic controls or event studies. All chapters in this part emphasize thinking in terms of potential outcomes and counterfactuals, finding and using methods that are most likely to give good estimates of average effects, and assessing the internal and external validity of such estimates.</p>
+        <p>Chapters of this section:
+        <ol start="19">
+          <li><strong>A framework for causal analysis</strong> (potential outcomes, average treatment effect selection and other confounders, use of causal graphs)</li>
+          <li><strong>Experiments</strong> (fields experiments, A/B testing, randomization and balance, attrition, power, internal and external validity)</li>
+          <li><strong>Methods for observational cross-section data</strong> (exact, propensity score matching vs. regression, the role of common support)</li>
+          <li><strong>Difference in differences</strong> (parallel trends, panel vs. repeated cross-section)</li>
+          <li><strong>Methods for observational panel data</strong> (fixed effects, first differences, clustering standard errors)</li>
+          <li><strong>Appropriate control group in observational panel data</strong> (synthetic control and event study, panel balance and selection)</li>
+        </ol>
+        </p>
       </div>
     </div>
   </div>
