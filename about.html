@@ -74,7 +74,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <h2 class="section-heading">I. Data Exploration</h2>
+        <h2 class="section-heading" id="Section1">I. Data Exploration</h2>
         <p>Before starting working with data, data analysts need to gain a good understanding of how their data was born, what's in their data, and assess its quality. Actual work typically starts with re-organizing, cleaning and storing the data in an appropriate way. Such work, also called data wrangling, takes a lot of time, typically more than any actual analysis. Moreover, the decisions during data wrangling may have far-reaching consequences for the results of the analysis. The chapters in this part discuss how to assess data quality by understanding how the data was born, what frequent issues actual data have, and introduce tools and good practice of data wrangling to deal with those issues. Next, we discuss the methods of exploratory data analysis and give advice on data visualization. This part is closed by chapters on concepts and methods that help generalize findings in actual data to other situations: inference and testing hypotheses.</p>
         <p>Chapters of this section:
           <ol>
@@ -86,7 +86,7 @@
             <li><strong>Testing hypotheses</strong> (null and alternative hypotheses, t-test, false positives / false negatives, p-value, testing multiple hypotheses)</li>
           </ol>
           </p>
-        <h2 class="section-heading">II. Patterns: regression analysis</h2>
+        <h2 class="section-heading" id="Section2">II. Patterns: regression analysis</h2>
         <p>Uncovering patterns of association in the data can be an important goal in itself, and it is the prerequisite to prediction and establishing the effect of an intervention. The chapters in this part give a thorough introduction to regression analysis, whose goal is to uncover average differences in y that correspond to differences in x. We start with simple regression analysis, introducing nonparametric regressions and focusing on linear regression. Subsequent chapters discuss how linear regression is used to accommodate complicated functional forms, how to generalize regression results from the data to other settings, and how to estimate and interpret the results of linear regression with multiple x variables. The last two chapters of this part cover probability models (linear regressions and logit and probit models with binary y variables) and regressions using time series data. Through all chapters, the emphasis is on understanding the intuition behind the methods, their applicability in various situations, and the correct interpretation of their results.</p>
         <p>Chapters of this section:
         <ol start="7">
@@ -98,7 +98,7 @@
           <li><strong>Time series regressions</strong> (series frequency, trends, seasonality, stationarity, lags, serial correlation)</li>
         </ol>
         </p>
-        <h2 class="section-heading">III. Prediction</h2>
+        <h2 class="section-heading" id="Section3">III. Prediction</h2>
         <p>Data analysis in business and policy applications is often aimed at predicting the value of variable y with the help of x variables. Examples include predicting the price of differentiated products by their characteristics, predicting the probability by which loan applicants would repay their loans based on their features, or forecasting daily sales by seasonal patterns. This part starts with introducing the general framework for prediction, including the concepts of the loss function, overfitting, training and test samples, and cross-validation. Separate chapters introduce prediction methods with linear regression (variable selection with lasso), tree-based methods, and random forest. We discuss prediction of probabilities and classification, and forecasting y in time series data. Through all chapters, we introduce the language used in predictive analytics (machine learning), emphasize the intuition behind the various predictive models and their evaluation, conceptual issues related to in-sample fit, cross-validation and out-of-data prediction, and how to choose a good method for the problem at hand that likely gives good predictions.</p>
         <p>Chapters of this section:
         <ol start="13">
@@ -110,7 +110,7 @@
           <li><strong>Forecasting from time series data</strong> (cross-validation in time series, ARIMA, vector autoregression, daily series and seasonality, new tools: auto-arima and Prophet)</li>
         </ol>
         </p>
-        <h2 class="section-heading">IV. Causality: learning the effects of interventions</h2>
+        <h2 class="section-heading" id="Section4">IV. Causality: learning the effects of interventions</h2>
         <p>Decisions in business and policy are often centered on specific interventions, such as changing monetary policy, modifying health care financing, changing the price or other attributes of products, or changing the media mix in marketing. Learning the effects of such interventions is the subject of causal analysis, an important purpose of data analysis. This part starts with the conceptual framework of causal analysis, introducing potential outcomes, counterfactuals, average effects, treated and control groups, and causal maps (graphs that show our assumptions about causal relationships about variables). These concepts help guide subsequent analysis and interpret its results. The next chapters in this part introduce potential issues with controlled experiments and tools to deal with them, confounders that bias causal estimates in observational data and how regression analysis and matching can overcome, or mitigate, their effects, and when and how longitudinal data can help further mitigate those issues. We introduce and discuss difference-in-differences analysis, panel regression analysis with first differences and fixed effects, and methods that can help defining control groups in longitudinal data, such as synthetic controls or event studies. All chapters in this part emphasize thinking in terms of potential outcomes and counterfactuals, finding and using methods that are most likely to give good estimates of average effects, and assessing the internal and external validity of such estimates.</p>
         <p>Chapters of this section:
         <ol start="19">
