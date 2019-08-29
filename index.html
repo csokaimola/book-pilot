@@ -20,6 +20,54 @@
     .img-circle {
         border-radius: 50%;
     }
+    
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 49.99999%;
+    }
+    
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
   </style> 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -88,13 +136,47 @@
         <p><strong>Data Analysis: Patterns, Prediction and Causality</strong> is a textbook that covers the most important methods and tools data analysts need in the fields of business, economics and public policy.  It textbook provides integrated knowledge of methods traditionally scattered around various fields such as econometrics, machine learning and practical business statistics. It covers data organization, data description, regression analysis, predictive analytics using regression and machine learning tools, causal analysis of the effects of interventions by doing experiments or using observational data, and practical skills for working with real-life data and collecting data. The textbook covers relatively few methods but helps students gain a a lot of practice and a deep intuitive understanding of those methods. We put a lot of emphasis on the interpretation and visualization of results.</p>
         <h2>Details of content</h2>
         <p>Our textbook covers integrated knowledge of methods and tools traditionally scattered around various fields such as econometrics, machine learning and practical business statistics. Our sections in the book are:</p>
-<!-- HERE: 4 pictures (with 1 sentence each) in squares for the 4 parts . Click: link to the respective part in second menu page "Key topics" -->          
-        <ol type="I"><strong>
-           <li><a href="about.html#Section1">Data Exploration</a></li>  
-           <li><a href="about.html#Section2">Patterns: regression analysis</a></li>
-           <li><a href="about.html#Section3">Prediction</a></li>
-           <li><a href="about.html#Section4">Causality: the effects of interventions</a></li>
-        </strong></ol>
+<!-- HERE: 4 pictures "Gallery" (with 1 sentence each) in squares for the 4 parts . Click: link to the respective part in second menu page "Key topics" -->
+        <div class="responsive">
+          <div class="gallery">
+            <a href="about.html#Section1">
+              <img src="img/explore1.png" width="600" height="400">
+            </a>
+            <div class="desc"><strong>I. Data Exploration</strong></div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="about.html#Section2">
+              <img src="img/regr2.png" width="600" height="400">
+            </a>
+            <div class="desc"><strong>II. Patterns: regression analysis</strong></div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="about.html#Section3">
+              <img src="img/predict3.png" width="600" height="400">
+            </a>
+            <div class="desc"><strong>III. Prediction</strong></div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a href="about.html#Section4">
+              <img src="img/causality4.jpg" width="600" height="400">
+            </a>
+            <div class="desc"><strong>IV. Causality: the effects of interventions</strong></div>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <!-- eddig -->
+
         <p>State-of-the art knowledge in data analysis includes traditional regression analysis, causal analysis of the effects of interventions, predictive analytics using regression and machine learning tools, and practical skills for working with real-life data and collecting data. We cover relatively few methods but help students gain a deep intuitive understanding. The upside is that visualization and interpretation of results may become the focus of analysis.</p>
         <p>Applied knowledge can be acquired only by working through many applications. Students will use real-life data; learn how to manage analytical projects from scratch as we provide data and code as part of an online ancillary platform. The textbook supports both  R and Stata.  The textbook is complemented with extensive online material including data, code, additional case studies, practice questions, sample exams and data exercises.</p>
 <!-- Authors -->          
